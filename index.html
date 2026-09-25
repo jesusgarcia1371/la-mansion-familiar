@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La mansión familiar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>La mansión familiar</h1>
+    </header>
+    
+    <main id="app">
+        <!-- El contenido se inyecta aquí -->
+    </main>
+
+    <!-- Estructura del Carrusel (Oculto por defecto) -->
+    <div id="carousel-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeCarousel()">&times;</span>
+            <button class="carousel-btn prev" onclick="changeImage(-1)">&#10094;</button>
+            
+            <div class="img-container">
+                <img id="carousel-img" src="" alt="Imagen">
+            </div>
+
+            <button class="carousel-btn next" onclick="changeImage(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
